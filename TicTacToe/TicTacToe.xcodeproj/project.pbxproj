@@ -8,17 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		FF44DB7D2B430F8200B451BE /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB7C2B430F8200B451BE /* TicTacToeApp.swift */; };
-		FF44DB7F2B430F8200B451BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB7E2B430F8200B451BE /* ContentView.swift */; };
+		FF44DB7F2B430F8200B451BE /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB7E2B430F8200B451BE /* StartView.swift */; };
 		FF44DB812B430F8400B451BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF44DB802B430F8400B451BE /* Assets.xcassets */; };
 		FF44DB842B430F8400B451BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF44DB832B430F8400B451BE /* Preview Assets.xcassets */; };
+		FF44DB8B2B4310B700B451BE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44DB8A2B4310B700B451BE /* Launch Screen.storyboard */; };
+		FF44DB8E2B4312AC00B451BE /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB8D2B4312AC00B451BE /* GameModels.swift */; };
+		FF44DB912B43162F00B451BE /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB902B43162F00B451BE /* ViewModifiers.swift */; };
+		FF44DB942B43173200B451BE /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB932B43173200B451BE /* GameView.swift */; };
+		FF44DB972B433B5F00B451BE /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB962B433B5F00B451BE /* GameService.swift */; };
+		FF44DB992B433F3E00B451BE /* GameSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB982B433F3E00B451BE /* GameSquare.swift */; };
+		FF44DB9B2B43404B00B451BE /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44DB9A2B43404B00B451BE /* SquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF44DB792B430F8200B451BE /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF44DB7C2B430F8200B451BE /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
-		FF44DB7E2B430F8200B451BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF44DB7E2B430F8200B451BE /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		FF44DB802B430F8400B451BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF44DB832B430F8400B451BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF44DB8A2B4310B700B451BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FF44DB8D2B4312AC00B451BE /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		FF44DB902B43162F00B451BE /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		FF44DB932B43173200B451BE /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FF44DB952B4338FA00B451BE /* GamePlanning.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GamePlanning.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FF44DB962B433B5F00B451BE /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		FF44DB982B433F3E00B451BE /* GameSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquare.swift; sourceTree = "<group>"; };
+		FF44DB9A2B43404B00B451BE /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				FF44DB7C2B430F8200B451BE /* TicTacToeApp.swift */,
-				FF44DB7E2B430F8200B451BE /* ContentView.swift */,
+				FF44DB7E2B430F8200B451BE /* StartView.swift */,
+				FF44DB922B43172100B451BE /* Game Screen */,
+				FF44DB8F2B43161000B451BE /* Util */,
+				FF44DB8C2B43129F00B451BE /* Models */,
 				FF44DB802B430F8400B451BE /* Assets.xcassets */,
+				FF44DB8A2B4310B700B451BE /* Launch Screen.storyboard */,
 				FF44DB822B430F8400B451BE /* Preview Content */,
+				FF44DB952B4338FA00B451BE /* GamePlanning.playground */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -65,6 +85,33 @@
 				FF44DB832B430F8400B451BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF44DB8C2B43129F00B451BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF44DB8D2B4312AC00B451BE /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF44DB8F2B43161000B451BE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FF44DB902B43162F00B451BE /* ViewModifiers.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FF44DB922B43172100B451BE /* Game Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FF44DB932B43173200B451BE /* GameView.swift */,
+				FF44DB962B433B5F00B451BE /* GameService.swift */,
+				FF44DB982B433F3E00B451BE /* GameSquare.swift */,
+				FF44DB9A2B43404B00B451BE /* SquareView.swift */,
+			);
+			path = "Game Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF44DB8B2B4310B700B451BE /* Launch Screen.storyboard in Resources */,
 				FF44DB842B430F8400B451BE /* Preview Assets.xcassets in Resources */,
 				FF44DB812B430F8400B451BE /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44DB7F2B430F8200B451BE /* ContentView.swift in Sources */,
+				FF44DB7F2B430F8200B451BE /* StartView.swift in Sources */,
+				FF44DB8E2B4312AC00B451BE /* GameModels.swift in Sources */,
 				FF44DB7D2B430F8200B451BE /* TicTacToeApp.swift in Sources */,
+				FF44DB972B433B5F00B451BE /* GameService.swift in Sources */,
+				FF44DB912B43162F00B451BE /* ViewModifiers.swift in Sources */,
+				FF44DB9B2B43404B00B451BE /* SquareView.swift in Sources */,
+				FF44DB942B43173200B451BE /* GameView.swift in Sources */,
+				FF44DB992B433F3E00B451BE /* GameSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -278,8 +332,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +363,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
